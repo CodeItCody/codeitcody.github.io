@@ -1,0 +1,65 @@
+<div class="container">
+
+  <img src="/img/cody.jpg" alt="me" class="img-circle img-cody img-responsive center-block">
+
+  <div class="row">
+
+    <div class="col-md-12">
+
+      <div class="hero-container">
+
+        <div class="hero-content">
+
+          {% if site.data.global.title != '' %}
+          <h1 class="text-center">{{site.data.global.title}}</h1>
+          {% endif %}
+
+          {% if site.data.global.description != '' %}
+          <p class="text-center">{{site.data.global.description}} {% include contact.html %}</p>
+          {% endif %}
+
+          {% include contact-modal.html %}
+
+          <div class="hero-buttons">
+
+            {% if site.data.global.medium != 'null' %}
+            <a href="https://{{ site.data.global.medium }}" target="_blank"><button class="btn btn-default"><i class="fa fa-medium fa-lg"></i>Blog</button></a>
+            {% endif %}
+            {% if site.data.global.github != '' %}
+              <a href="https://github.com/{{ site.data.global.github }}" target="_blank"><button class="btn btn-default"><i class="fa fa-github fa-lg"></i>Github</button></a>
+            {% endif %}
+            {% if site.data.global.linkedin != '' %}
+            <a href="https://linkedin.com/in/{{ site.data.global.linkedin }}" target="_blank"><button class="btn btn-default"><i class="fa fa-linkedin fa-lg"></i>LinkedIn</button></a>
+            {% endif %}
+            {% if site.data.global.twitter != '' %}
+            <a href="https://twitter.com/{{ site.data.global.twitter }}" target="_blank"><button class="btn btn-default"><i class="fa fa-twitter fa-lg"></i>Twitter</button></a>
+            {% endif %}
+
+          </div>
+
+          <a class="section-jump text-center" href="#portfolio">
+            <button type="button" class="btn btn-default btn-lg">
+              <i class="fa fa-angle-down fa-2x"></i>
+              Portfolio
+            </button>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <script async src="https://static.medium.com/embed.js"></script><a class="m-profile" data-border="false" data-width="100%" href="https://medium.com/@codeitcody">Cody</a>
+    </div>
+    <div class="col-md-6">
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/codeitcody" data-widget-id="701984475073282048" data-chrome="nofooter noborders noscrollbar">Tweets by @codeitcody</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+
+</div>

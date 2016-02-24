@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Hi, I&#39;m Cody.</title>
+ <link href="http://127.0.0.1:4000/atom.xml" rel="self"/>
+ <link href="http://127.0.0.1:4000/"/>
+ <updated>2016-02-22T23:54:35-07:00</updated>
+ <id>http://127.0.0.1:4000</id>
+ <author>
+   <name>Cody Schnacker</name>
+   <email>codeitcody@gmail.com</email>
+ </author>
+
+ 
+
+</feed>
